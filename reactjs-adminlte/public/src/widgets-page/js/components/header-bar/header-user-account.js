@@ -16,6 +16,11 @@ define(
 
             componentDidMount: function () {
                 this.setState({
+                    displayName: this.props.userOptions.displayName,
+                    description: this.props.userOptions.description,
+                    displayPicture: this.props.userOptions.displayPicture,
+                    company: this.props.userOptions.company,
+                    date: this.props.userOptions.date,
                 });
             },
 

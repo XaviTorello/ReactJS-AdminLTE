@@ -6,13 +6,29 @@ define(
     ],
     function (React, $, UserPanel) {
         var NavigationMenu = React.createClass({
+            getInitialState: function() {
+                return {
+                    userOptions: [],
+                }
+            },
+
+            componentDidMount: function () {
+                this.setState({
+                    userOptions: this.props.userOptions
+                });
+
+            },
+
             render: function () {
+                var that = this;
+
                 return (
                     <aside className="main-sidebar">
                         {/* sidebar: style can be found in sidebar.less */}
                         <section className="sidebar" >
                             {/* Sidebar user panel */}
-                            <UserPanel />
+                            <UserPanel userOptions={that.props.userOptions}/>
+
                             {/* search form */}
                             <form action="#" method="get" className="sidebar-form">
                                 <div className="input-group">

@@ -192,7 +192,7 @@ define(
                     <div className="wrapper">
                         <HeaderBar userOptions={userOptions}/>
                         
-                        <NavigationMenu />
+                        <NavigationMenu userOptions={userOptions}/>
 
                         <div className="content-wrapper">
                             <section className="content-header">
