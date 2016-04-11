@@ -46,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="navigation-user-panel.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="navigation-user-panel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/navigation-menu/navigation-user-panel.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
@@ -66,13 +66,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="widgets.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="widgets.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/widgets.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.294118">
-              <caret line="201" column="60" selection-start-line="201" selection-start-column="60" selection-end-line="201" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.9370629">
+              <caret line="194" column="39" selection-start-line="194" selection-start-column="25" selection-end-line="194" selection-end-column="39" />
               <folding>
-                <element signature="e#1571#1780#0" expanded="false" />
                 <element signature="e#1782#1987#0" expanded="false" />
                 <element signature="e#1989#2197#0" expanded="false" />
                 <element signature="e#2199#2401#0" expanded="false" />
@@ -129,9 +128,9 @@
         <option value="$PROJECT_DIR$/public/src/widgets-page/js/components/navigation-menu/navigation-user-status.js" />
         <option value="$PROJECT_DIR$/public/src/widgets-page/js/components/header-bar/header-bar.js" />
         <option value="$PROJECT_DIR$/public/src/widgets-page/js/components/navigation-menu/navigation-menu.js" />
-        <option value="$PROJECT_DIR$/public/src/widgets-page/js/components/widgets.js" />
         <option value="$PROJECT_DIR$/public/src/widgets-page/js/components/header-bar/header-user-account.js" />
         <option value="$PROJECT_DIR$/public/src/widgets-page/js/components/navigation-menu/navigation-user-panel.js" />
+        <option value="$PROJECT_DIR$/public/src/widgets-page/js/components/widgets.js" />
       </list>
     </option>
   </component>
@@ -952,14 +951,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/navigation-menu/navigation-menu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.1764708">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/header-bar/header-bar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.552239">
@@ -968,21 +959,6 @@
             <element signature="e#2654#2787#0" expanded="false" />
             <element signature="e#2989#3115#0" expanded="false" />
             <element signature="e#3248#3378#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/widgets.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.294118">
-          <caret line="201" column="60" selection-start-line="201" selection-start-column="60" selection-end-line="201" selection-end-column="60" />
-          <folding>
-            <element signature="e#1571#1780#0" expanded="false" />
-            <element signature="e#1782#1987#0" expanded="false" />
-            <element signature="e#1989#2197#0" expanded="false" />
-            <element signature="e#2199#2401#0" expanded="false" />
-            <element signature="e#2818#3180#0" expanded="false" />
-            <element signature="e#3545#3907#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1000,6 +976,28 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/navigation-menu/navigation-menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.1764708">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/widgets.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9370629">
+          <caret line="194" column="39" selection-start-line="194" selection-start-column="25" selection-end-line="194" selection-end-column="39" />
+          <folding>
+            <element signature="e#1782#1987#0" expanded="false" />
+            <element signature="e#1989#2197#0" expanded="false" />
+            <element signature="e#2199#2401#0" expanded="false" />
+            <element signature="e#2818#3180#0" expanded="false" />
+            <element signature="e#3545#3907#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
