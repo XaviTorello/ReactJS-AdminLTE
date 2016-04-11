@@ -13,7 +13,8 @@ define(
                 return {
                     messages: [],
                     notifications: [],
-                    tasks: []
+                    tasks: [],
+                    userOptions: {}
                 }
             },
             pushMenu: function () {
@@ -91,14 +92,17 @@ define(
                     percentage: 80
                 }];
 
+
                 this.setState({
                     messages: messages,
                     notifications: notifications,
-                    tasks: tasks
+                    tasks: tasks,
+                    userOptions: this.props.userOptions
                 });
             },
             render: function () {
                 var that = this;
+
                 return (
                     <header className="main-header">
                         {/* Logo */}
@@ -142,7 +146,9 @@ define(
                                     </li>
                                     {/* User Account: style can be found in dropdown.less */}
                                     <li className="dropdown user user-menu">
-                                        <UserAccount />
+
+                                        <UserAccount userOptions={that.props.userOptions}/>
+
                                     </li>
                                     { /* ontrol Sidebar Toggle Button */}
                                     <li>

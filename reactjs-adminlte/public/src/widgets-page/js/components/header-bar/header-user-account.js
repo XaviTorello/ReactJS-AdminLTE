@@ -6,16 +6,16 @@ define(
         var UserAccount = React.createClass({
             getInitialState: function () {
                 return {
-                    messages: [],
-                    notifications: [],
-                    tasks: []
+                    displayName: this.props.userOptions.displayName,
+                    description: this.props.userOptions.description,
+                    displayPicture: this.props.userOptions.displayPicture,
+                    company: this.props.userOptions.company,
+                    date: this.props.userOptions.date,
                 }
             },
 
             componentDidMount: function () {
-
                 this.setState({
-
                 });
             },
 
@@ -25,34 +25,34 @@ define(
                 return (
                     <li className="dropdown user user-menu">
                         <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-                            <img src="dist/img/user2-160x160.jpg" className="user-image" alt="User Image" />
-                            <span className="hidden-xs">Xavi Torelló</span>
+                            <img src={that.state.displayPicture} className="user-image" alt="User Image" />
+                            <span className="hidden-xs">{that.state.displayName}</span>
                         </a>
                         <ul className="dropdown-menu">
                             <li className="user-header">
-                                <img src="dist/img/user2-160x160.jpg" className="img-circle" alt="User Image" />
+                                <img src={that.state.displayPicture} className="img-circle" alt="User Image" />
                                 <p>
-                                    Xavi Torelló - Web Developer
-                                    <small>Member since Nov. 2012</small>
+                                    {that.state.displayName} - {that.state.description}
+                                    <small>Membre de {that.state.company} des de {that.state.date}</small>
                                 </p>
                             </li>
                             <li className="user-body">
                                 <div className="col-xs-4 text-center">
-                                    <a href="#">Followers</a>
+                                    <a href="#">Seguidors</a>
                                 </div>
                                 <div className="col-xs-4 text-center">
-                                    <a href="#">Sales</a>
+                                    <a href="#">Ventes</a>
                                 </div>
                                 <div className="col-xs-4 text-center">
-                                    <a href="#">Friends</a>
+                                    <a href="#">Amistats</a>
                                 </div>
                             </li>
                             <li className="user-footer">
                                 <div className="pull-left">
-                                    <a href="#" className="btn btn-default btn-flat">Profile</a>
+                                    <a href="#" className="btn btn-default btn-flat">Perfil</a>
                                 </div>
                                 <div className="pull-right">
-                                    <a href="#" className="btn btn-default btn-flat">Sign out</a>
+                                    <a href="#" className="btn btn-default btn-flat">Sortir</a>
                                 </div>
                             </li>
                         </ul>

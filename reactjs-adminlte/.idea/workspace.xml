@@ -22,31 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="header-bar.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/header-bar/header-bar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27622378">
-              <caret line="143" column="76" selection-start-line="143" selection-start-column="76" selection-end-line="143" selection-end-column="76" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="header-user-account.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="header-user-account.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/header-bar/header-user-account.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="table-box.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/widgets/table-box/table-box.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.47524753">
+              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -55,82 +35,40 @@
       <file leaf-file-name="widgets.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/widgets.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.5882354">
-              <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
+            <state vertical-scroll-proportion="-5.7058825">
+              <caret line="185" column="40" selection-start-line="185" selection-start-column="40" selection-end-line="185" selection-end-column="40" />
               <folding>
-                <element signature="e#1917#2126#0" expanded="false" />
-                <element signature="e#2128#2333#0" expanded="false" />
-                <element signature="e#2335#2543#0" expanded="false" />
-                <element signature="e#2545#2747#0" expanded="false" />
-                <element signature="e#3164#3526#0" expanded="false" />
-                <element signature="e#3891#4253#0" expanded="false" />
-                <element signature="e#4295#5150#0" expanded="false" />
-                <element signature="e#4296#4506#0" expanded="false" />
-                <element signature="e#4508#4718#0" expanded="false" />
-                <element signature="e#4720#4937#0" expanded="false" />
-                <element signature="e#4939#5149#0" expanded="false" />
-                <element signature="e#5186#6018#0" expanded="false" />
-                <element signature="e#5187#5429#0" expanded="false" />
-                <element signature="e#5431#5629#0" expanded="false" />
-                <element signature="e#5631#5825#0" expanded="false" />
-                <element signature="e#5827#6017#0" expanded="false" />
-                <element signature="e#6062#7032#0" expanded="false" />
-                <element signature="e#6063#6339#0" expanded="false" />
-                <element signature="e#6341#6573#0" expanded="false" />
-                <element signature="e#6575#6802#0" expanded="false" />
-                <element signature="e#6804#7031#0" expanded="false" />
-                <element signature="e#7691#7991#0" expanded="false" />
-                <element signature="e#8025#8611#0" expanded="false" />
-                <element signature="e#8026#8317#0" expanded="false" />
-                <element signature="e#8319#8610#0" expanded="false" />
-                <element signature="e#8984#9579#0" expanded="false" />
-                <element signature="e#8985#9276#0" expanded="false" />
-                <element signature="e#9278#9578#0" expanded="false" />
-                <element signature="e#9612#9905#0" expanded="false" />
-                <element signature="e#9613#9904#0" expanded="false" />
-                <element signature="e#10245#10840#0" expanded="false" />
-                <element signature="e#10246#10537#0" expanded="false" />
-                <element signature="e#10539#10839#0" expanded="false" />
-                <element signature="e#10873#11166#0" expanded="false" />
-                <element signature="e#10874#11165#0" expanded="false" />
-                <element signature="e#11500#12095#0" expanded="false" />
-                <element signature="e#11501#11792#0" expanded="false" />
-                <element signature="e#11794#12094#0" expanded="false" />
-                <element signature="e#12128#12421#0" expanded="false" />
-                <element signature="e#12129#12420#0" expanded="false" />
-                <element signature="e#12818#13026#0" expanded="false" />
-                <element signature="e#13234#13453#0" expanded="false" />
-                <element signature="e#13689#14349#0" expanded="false" />
-                <element signature="e#13958#14327#0" expanded="false" />
-                <element signature="e#13959#14079#0" expanded="false" />
-                <element signature="e#14081#14206#0" expanded="false" />
-                <element signature="e#14208#14326#0" expanded="false" />
-                <element signature="e#14351#15068#0" expanded="false" />
-                <element signature="e#14677#15046#0" expanded="false" />
-                <element signature="e#14678#14798#0" expanded="false" />
-                <element signature="e#14800#14925#0" expanded="false" />
-                <element signature="e#14927#15045#0" expanded="false" />
-                <element signature="e#15123#18649#0" expanded="false" />
-                <element signature="e#15145#16469#0" expanded="false" />
-                <element signature="e#15595#16447#0" expanded="false" />
-                <element signature="e#15625#16024#0" expanded="false" />
-                <element signature="e#16026#16421#0" expanded="false" />
-                <element signature="e#16471#18631#0" expanded="false" />
-                <element signature="e#17202#17662#0" expanded="false" />
-                <element signature="e#17232#17636#0" expanded="false" />
-                <element signature="e#17698#18609#0" expanded="false" />
-                <element signature="e#17728#18127#0" expanded="false" />
-                <element signature="e#18129#18583#0" expanded="false" />
-                <element signature="e#20596#21057#0" expanded="false" />
-                <element signature="e#20651#21017#0" expanded="false" />
-                <element signature="e#23457#24962#0" expanded="false" />
-                <element signature="e#23518#24266#0" expanded="false" />
-                <element signature="e#23581#24218#0" expanded="false" />
-                <element signature="e#24270#24944#0" expanded="false" />
-                <element signature="e#24333#24896#0" expanded="false" />
-                <element signature="e#25050#25874#0" expanded="false" />
-                <element signature="e#25105#25833#0" expanded="false" />
+                <element signature="e#1555#1764#0" expanded="false" />
+                <element signature="e#1766#1971#0" expanded="false" />
+                <element signature="e#1973#2181#0" expanded="false" />
+                <element signature="e#2183#2385#0" expanded="false" />
+                <element signature="e#2802#3164#0" expanded="false" />
+                <element signature="e#3529#3891#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header-bar.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/header-bar/header-bar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.8235292">
+              <caret line="140" column="59" selection-start-line="140" selection-start-column="59" selection-end-line="140" selection-end-column="59" />
+              <folding>
+                <element signature="e#2654#2787#0" expanded="false" />
+                <element signature="e#2989#3115#0" expanded="false" />
+                <element signature="e#3248#3378#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="table-box.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/widgets/table-box/table-box.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.11764706">
+              <caret line="28" column="47" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="47" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -138,8 +76,8 @@
       <file leaf-file-name="table-content.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/widgets/table-box/table-content.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.5882354">
+              <caret line="14" column="14" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -197,10 +135,10 @@
         <option value="$PROJECT_DIR$/public/src/widgets-page/js/components/widgets/table-box/table-content.js" />
         <option value="$PROJECT_DIR$/public/src/widgets-page/js/components/widgets/table-box/table-box.js" />
         <option value="$PROJECT_DIR$/public/src/widgets-page/js/main.js" />
-        <option value="$PROJECT_DIR$/public/src/widgets-page/js/components/widgets.js" />
         <option value="$PROJECT_DIR$/public/src/widgets-page/js/components/navigation-menu.js" />
-        <option value="$PROJECT_DIR$/public/src/widgets-page/js/components/header-bar/header-user-account.js" />
         <option value="$PROJECT_DIR$/public/src/widgets-page/js/components/header-bar/header-bar.js" />
+        <option value="$PROJECT_DIR$/public/src/widgets-page/js/components/widgets.js" />
+        <option value="$PROJECT_DIR$/public/src/widgets-page/js/components/header-bar/header-user-account.js" />
       </list>
     </option>
   </component>
@@ -821,7 +759,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2654#2787#0" expanded="false" />
+            <element signature="e#2989#3115#0" expanded="false" />
+            <element signature="e#3248#3378#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -903,26 +845,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/controls-menu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/common-functions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8019802">
           <caret line="51" column="33" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/widgets/table-box/table-box.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -935,100 +861,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/widgets/table-box/table-content.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/footer-bar/footer-bar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.2941175">
           <caret line="26" column="56" selection-start-line="0" selection-start-column="0" selection-end-line="38" selection-end-column="1" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/widgets.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.5882354">
-          <caret line="40" column="39" selection-start-line="40" selection-start-column="39" selection-end-line="40" selection-end-column="39" />
-          <folding>
-            <element signature="e#1917#2126#0" expanded="false" />
-            <element signature="e#2128#2333#0" expanded="false" />
-            <element signature="e#2335#2543#0" expanded="false" />
-            <element signature="e#2545#2747#0" expanded="false" />
-            <element signature="e#3164#3526#0" expanded="false" />
-            <element signature="e#3891#4253#0" expanded="false" />
-            <element signature="e#4295#5150#0" expanded="false" />
-            <element signature="e#4296#4506#0" expanded="false" />
-            <element signature="e#4508#4718#0" expanded="false" />
-            <element signature="e#4720#4937#0" expanded="false" />
-            <element signature="e#4939#5149#0" expanded="false" />
-            <element signature="e#5186#6018#0" expanded="false" />
-            <element signature="e#5187#5429#0" expanded="false" />
-            <element signature="e#5431#5629#0" expanded="false" />
-            <element signature="e#5631#5825#0" expanded="false" />
-            <element signature="e#5827#6017#0" expanded="false" />
-            <element signature="e#6062#7032#0" expanded="false" />
-            <element signature="e#6063#6339#0" expanded="false" />
-            <element signature="e#6341#6573#0" expanded="false" />
-            <element signature="e#6575#6802#0" expanded="false" />
-            <element signature="e#6804#7031#0" expanded="false" />
-            <element signature="e#7691#7991#0" expanded="false" />
-            <element signature="e#8025#8611#0" expanded="false" />
-            <element signature="e#8026#8317#0" expanded="false" />
-            <element signature="e#8319#8610#0" expanded="false" />
-            <element signature="e#8984#9579#0" expanded="false" />
-            <element signature="e#8985#9276#0" expanded="false" />
-            <element signature="e#9278#9578#0" expanded="false" />
-            <element signature="e#9612#9905#0" expanded="false" />
-            <element signature="e#9613#9904#0" expanded="false" />
-            <element signature="e#10245#10840#0" expanded="false" />
-            <element signature="e#10246#10537#0" expanded="false" />
-            <element signature="e#10539#10839#0" expanded="false" />
-            <element signature="e#10873#11166#0" expanded="false" />
-            <element signature="e#10874#11165#0" expanded="false" />
-            <element signature="e#11500#12095#0" expanded="false" />
-            <element signature="e#11501#11792#0" expanded="false" />
-            <element signature="e#11794#12094#0" expanded="false" />
-            <element signature="e#12128#12421#0" expanded="false" />
-            <element signature="e#12129#12420#0" expanded="false" />
-            <element signature="e#12818#13026#0" expanded="false" />
-            <element signature="e#13234#13453#0" expanded="false" />
-            <element signature="e#13689#14349#0" expanded="false" />
-            <element signature="e#13958#14327#0" expanded="false" />
-            <element signature="e#13959#14079#0" expanded="false" />
-            <element signature="e#14081#14206#0" expanded="false" />
-            <element signature="e#14208#14326#0" expanded="false" />
-            <element signature="e#14351#15068#0" expanded="false" />
-            <element signature="e#14677#15046#0" expanded="false" />
-            <element signature="e#14678#14798#0" expanded="false" />
-            <element signature="e#14800#14925#0" expanded="false" />
-            <element signature="e#14927#15045#0" expanded="false" />
-            <element signature="e#15123#18649#0" expanded="false" />
-            <element signature="e#15145#16469#0" expanded="false" />
-            <element signature="e#15595#16447#0" expanded="false" />
-            <element signature="e#15625#16024#0" expanded="false" />
-            <element signature="e#16026#16421#0" expanded="false" />
-            <element signature="e#16471#18631#0" expanded="false" />
-            <element signature="e#17202#17662#0" expanded="false" />
-            <element signature="e#17232#17636#0" expanded="false" />
-            <element signature="e#17698#18609#0" expanded="false" />
-            <element signature="e#17728#18127#0" expanded="false" />
-            <element signature="e#18129#18583#0" expanded="false" />
-            <element signature="e#20596#21057#0" expanded="false" />
-            <element signature="e#20651#21017#0" expanded="false" />
-            <element signature="e#23457#24962#0" expanded="false" />
-            <element signature="e#23518#24266#0" expanded="false" />
-            <element signature="e#23581#24218#0" expanded="false" />
-            <element signature="e#24270#24944#0" expanded="false" />
-            <element signature="e#24333#24896#0" expanded="false" />
-            <element signature="e#25050#25874#0" expanded="false" />
-            <element signature="e#25105#25833#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1048,18 +885,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/header-bar/header-user-account.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/babel-core/node_modules/babylon/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="2816" column="7" selection-start-line="2816" selection-start-column="7" selection-end-line="2816" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/controls-menu.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/widgets/table-box/table-content.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5882354">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/widgets/table-box/table-box.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11764706">
+          <caret line="28" column="47" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/header-bar/header-bar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27622378">
-          <caret line="143" column="76" selection-start-line="143" selection-start-column="76" selection-end-line="143" selection-end-column="76" />
+        <state vertical-scroll-proportion="-7.8235292">
+          <caret line="140" column="59" selection-start-line="140" selection-start-column="59" selection-end-line="140" selection-end-column="59" />
+          <folding>
+            <element signature="e#2654#2787#0" expanded="false" />
+            <element signature="e#2989#3115#0" expanded="false" />
+            <element signature="e#3248#3378#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/widgets.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.7058825">
+          <caret line="185" column="40" selection-start-line="185" selection-start-column="40" selection-end-line="185" selection-end-column="40" />
+          <folding>
+            <element signature="e#1555#1764#0" expanded="false" />
+            <element signature="e#1766#1971#0" expanded="false" />
+            <element signature="e#1973#2181#0" expanded="false" />
+            <element signature="e#2183#2385#0" expanded="false" />
+            <element signature="e#2802#3164#0" expanded="false" />
+            <element signature="e#3529#3891#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/src/widgets-page/js/components/header-bar/header-user-account.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47524753">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
           <folding />
         </state>
       </provider>
