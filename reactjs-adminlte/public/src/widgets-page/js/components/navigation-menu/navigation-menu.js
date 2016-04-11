@@ -41,26 +41,62 @@ define(
                             {/* /.search form */}
                             {/* sidebar menu: : style can be found in sidebar.less */}
                             <ul className="sidebar-menu">
-                                <li className="header">MAIN NAVIGATION</li>
+                                <li className="header">Accions</li>
                                 <li className="active treeview">
                                     <a href="#">
                                         <i className="fa fa-dashboard"></i>
+
                                         <span>
-                                            Dashboard
+                                            Propostes
                                         </span>
                                         <i className="fa fa-angle-left pull-right"></i>
                                     </a>
                                     <ul className="treeview-menu">
-                                        <li className="active"><a href="index.html"><i className="fa fa-circle-o"></i> Dashboard xv1</a></li>
-                                        <li><a href="index2.html"><i className="fa fa-circle-o"></i> Dashboard v2</a></li>
+                                        <li className="active"><a href="index.html"><i className="fa fa-dashboard"></i> Dashboard</a></li>
+                                        <li><a href="index2.html"><i className="fa fa-file-o"></i> Última proposta</a></li>
+                                        <li><a href="index2.html"><i className="fa fa-folder"></i> Última setmana</a></li>
                                     </ul>
                                 </li>
 
-                                <li><a href="documentation/index.html"><i className="fa fa-book"></i> <span>Documentation</span></a></li>
-                                <li className="header">LABELS</li>
+                                <li className="active treeview">
+                                    <a href="#">
+                                        <i className="fa fa-bar-chart"></i>
+
+                                        <span>
+                                            Dades
+                                        </span>
+                                        <i className="fa fa-angle-left pull-right"></i>
+                                    </a>
+                                    <ul className="treeview-menu">
+                                        <li><a href="index.html"><i className="fa fa-pie-chart"></i> Gràfic</a></li>
+                                        <li><a href="index2.html"><i className="fa fa-table"></i> Taula</a></li>
+                                    </ul>
+                                </li>
+
+                                <li className="active treeview">
+                                    <a href="#">
+                                        <i className="fa fa-share"></i>
+                                        <span>
+                                            Processament
+                                        </span>
+                                        <i className="fa fa-angle-left pull-right"></i>
+                                    </a>
+                                    <ul className="treeview-menu">
+                                        <li><a href="index.html"><i className="fa fa-share"></i> ERP</a></li>
+                                        <li><a href="index2.html"><i className="fa fa-money"></i> Pool de Compra</a></li>
+                                    </ul>
+                                </li>
+
+
+                                <li className="header">Pendents</li>
                                 <li><a href="#"><i className="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
                                 <li><a href="#"><i className="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
                                 <li><a href="#"><i className="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+
+
+                                <li className="header">Ajuda</li>
+                                <li><a href="documentation/index.html"><i className="fa fa-book"></i> <span>Documentació</span></a></li>
+
                             </ul>
                         </section>
                         {/* /.sidebar */}
