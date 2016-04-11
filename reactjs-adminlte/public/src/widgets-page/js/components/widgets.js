@@ -36,6 +36,17 @@ define(
                 }
             },
             componentDidMount: function() {
+                var userOptions = [ {
+                    username: 'xtorello',
+                    displayName: 'Xavi Torelló',
+                    description: 'Technology enthusiast',
+                    displayPicture: '../dist/img/user7-128x128.jpg',
+
+                    "company": "GISCE-TI",
+                    "status": "online",
+                    "date": "Febrer 2015"
+                }]
+
                 var infoTileOptions = [{
                     theme: 'bg-aqua',
                     icon: 'fa-envelope-o',

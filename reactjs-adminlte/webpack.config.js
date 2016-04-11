@@ -22,7 +22,7 @@ var config = {
             jqueryUi: plugins_dir + '/jQueryUI/jquery-ui.min.js',
             bootstrap: plugins_dir + '/bootstrap/js/bootstrap.min.js',
             //eve: node_dir + '/raphael/eve/eve.js',
-            raphael: node_dir + '/webpack-raphael/raphael.js',
+            //raphael: node_dir + '/webpack-raphael/raphael.js',
             morris: plugins_dir + '/morris/morris.js',
             //sparkline: plugins_dir + '/sparkline/jquery.sparkline.min.js',
             //jvectormap: plugins_dir + '/jvectormap/jquery-jvectormap-1.2.2.min.js',

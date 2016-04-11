@@ -4,9 +4,10 @@ define(
         'jquery',
         './header-messages',
         './header-notifications',
-        './header-tasks'
+        './header-tasks',
+        './header-user-account'
     ],
-    function (React, $, HeaderMessages, HeaderNotifications, HeaderTasks) {
+    function (React, $, HeaderMessages, HeaderNotifications, HeaderTasks, UserAccount) {
         var HeaderBar = React.createClass({
             getInitialState: function () {
                 return {
@@ -103,7 +104,7 @@ define(
                         {/* Logo */}
                         <a href="index2.html" className="logo">
                             {/* mini logo for sidebar mini 50x50 pixels */}
-                            <span className="logo-mini"><b>oKW</b>GUI</span>
+                            <span className="logo-mini">o<b>KW</b></span>
                             {/* logo for regular state and mobile devices */}
                             <span className="logo-lg"><b>oraKWlum</b> Frontend</span>
                         </a>
@@ -141,41 +142,7 @@ define(
                                     </li>
                                     {/* User Account: style can be found in dropdown.less */}
                                     <li className="dropdown user user-menu">
-                                        <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-                                            <img src="dist/img/user2-160x160.jpg" className="user-image" alt="User Image" />
-                                            <span className="hidden-xs">Xavi Torell</span>
-                                        </a>
-                                        <ul className="dropdown-menu">
-                                            {/* User image */}
-                                            <li className="user-header">
-                                                <img src="dist/img/user2-160x160.jpg" className="img-circle" alt="User Image" />
-                                                <p>
-                                                    Xavi Torelló - Web Developer
-                                                    <small>Member since Nov. 2012</small>
-                                                </p>
-                                            </li>
-                                            {/* Menu Body */}
-                                            <li className="user-body">
-                                                <div className="col-xs-4 text-center">
-                                                    <a href="#">Followers</a>
-                                                </div>
-                                                <div className="col-xs-4 text-center">
-                                                    <a href="#">Sales</a>
-                                                </div>
-                                                <div className="col-xs-4 text-center">
-                                                    <a href="#">Friends</a>
-                                                </div>
-                                            </li>
-                                            {/* Menu Footer */}
-                                            <li className="user-footer">
-                                                <div className="pull-left">
-                                                    <a href="#" className="btn btn-default btn-flat">Profile</a>
-                                                </div>
-                                                <div className="pull-right">
-                                                    <a href="#" className="btn btn-default btn-flat">Sign out</a>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                        <UserAccount />
                                     </li>
                                     { /* ontrol Sidebar Toggle Button */}
                                     <li>

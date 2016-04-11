@@ -47,13 +47,13 @@ define(
 
                 return (
                     <Box
-                        title={that.state.title}
-                        width={that.state.width}
-                        theme={that.state.theme}
-                        border={that.state.border}
+                        title = {that.state.title}
+                        width = {that.state.width}
+                        theme = {that.state.theme}
+                        border = {that.state.border}
                         boxTools = {that.state.tools}
-                        content={content}
-                        footer={that.state.footer}
+                        content = {content}
+                        footer = {that.state.footer}
                     />
                 )
             }
