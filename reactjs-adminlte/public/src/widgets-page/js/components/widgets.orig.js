@@ -4,8 +4,6 @@ define(
         'jquery',
         './header-bar/header-bar',
         './navigation-menu',
-        './footer-bar/footer-bar',
-        './widgets/table-box/table-box',
         './widgets/info-tile/info-tile',
         './widgets/info-tile/progress-bar',
         './widgets/stat-tile',
@@ -19,9 +17,8 @@ define(
         './widgets/post/post',
         './widgets/post/social-button',
         './widgets/post/social-info'
-
     ],
-    function (React, $, HeaderBar, NavigationMenu, FooterBar, TableBox, InfoTile, ProgressBar, StatTile, Box, ChatBox, Conversations, Contacts, ProfileCard, ProfileInfoList, ProfileInfoBlocks, Post, SocialButton, SocialInfo) {
+    function (React, $, HeaderBar, NavigationMenu, InfoTile, ProgressBar, StatTile, Box, ChatBox, Conversations, Contacts, ProfileCard, ProfileInfoList, ProfileInfoBlocks, Post, SocialButton, SocialInfo) {
         var Widgets = React.createClass({
             getInitialState: function() {
                 return {
@@ -40,7 +37,7 @@ define(
                     theme: 'bg-aqua',
                     icon: 'fa-envelope-o',
                     subject: 'Messages',
-                    stats: '1,310',
+                    stats: '1,410',
                     content: ''
                 }, {
                     theme: 'bg-green',
@@ -424,79 +421,79 @@ define(
             render: function() {
                 var infoTileWidgets = this.state.infoTileOptions.map(function (options, iterator) {
                     return (
-                        <InfoTile
+                        <InfoTile 
                             key = {"rowOne"+iterator}
                             width = {3}
-                            content = ''
-                            icon = {options.icon}
-                            stats = {options.stats}
-                            subject = {options.subject}
+                            content = '' 
+                            icon = {options.icon} 
+                            stats = {options.stats} 
+                            subject = {options.subject} 
                             theme = {options.theme} />
                     )
                 });
 
                 var progressInfoTileWidgets = this.state.progressInfoTileOptions.map(function (options, iterator) {
                     return (
-                        <InfoTile
-                            key = {"rowTwo"+iterator}
+                        <InfoTile 
+                            key = {"rowTwo"+iterator} 
                             width = {3}
-                            content=''
-                            icon = {options.icon}
-                            stats = {options.stats}
-                            subject = {options.subject}
+                            content='' 
+                            icon = {options.icon} 
+                            stats = {options.stats} 
+                            subject = {options.subject} 
                             theme = {options.theme} >
                             <ProgressBar percent={options.progressPercent} description={options.progressDescription} color={options.progressColor} />
-                        </InfoTile>
+                        </InfoTile>    
                     )
                 });
 
                 var statTileWidgets = this.state.statTileOptions.map(function (options, iterator) {
                     return (
-                        <StatTile
+                        <StatTile 
                             key={"rowThree"+iterator}
                             width = {3}
-                            icon = {options.icon}
+                            icon = {options.icon} 
                             link = {options.link}
                             stats = {options.stats}
-                            subject = {options.subject}
+                            subject = {options.subject} 
                             theme = {options.theme} />
                     )
                 });
 
                 var boxWidgets = this.state.boxOptions.map(function (options, iterator) {
                     return (
-                        <Box
-                            key={"rowFour"+iterator}
+                        <Box 
+                            key={"rowFour"+iterator} 
                             width = {3}
                             border = {false}
                             content = {options.content}
-                            loading = {options.loading}
+                            loading = {options.loading} 
                             theme = {options.theme}
-                            title = {options.title}
-                            collapsed = {options.collapsed}
+                            title = {options.title} 
+                            collapsed = {options.collapsed} 
                             boxTools = {options.boxTools} />
                     )
                 });
 
                 var smallBoxBorderedWidgets = this.state.boxBorderedOptions.map(function (options, iterator) {
                     return (
-                        <Box
+                        <Box 
                             key={"rowFive"+iterator}
-                            width = {3}
+                            width = {3} 
                             border = {options.border}
                             content = {options.content}
-                            loading = {options.loading}
+                            loading = {options.loading} 
                             theme = {options.theme}
-                            title = {options.title}
-                            collapsed = {options.collapsed}
+                            title = {options.title} 
+                            collapsed = {options.collapsed} 
                             boxTools = {options.boxTools} />
                     )
                 });
 
                 var chatBoxWidgets = this.state.chatBoxOptions.map(function (options, iterator) {
                     return (
-                        <ChatBox
-                            key={"rowSix"+iterator}
+                        <ChatBox 
+                            key={"rowSix"+iterator} 
                             width = {3}
                             buttonTheme = {options.buttonTheme}
                             chatTheme = {options.chatTheme}
@@ -517,11 +514,11 @@ define(
                 var ProfileCardWidgets = this.state.profileCardOptions.map(function (options, iterator) {
                     if(options.pictureAlignment === 'left'){
                         return (
-                            <ProfileCard
+                            <ProfileCard 
                                 key={"rowSeven"+iterator}
                                 width={4}
-                                theme={options.theme}
-                                displayName={options.displayName}
+                                theme={options.theme} 
+                                displayName={options.displayName} 
                                 description={options.description}
                                 displayPicture={options.displayPicture}
                                 pictureAlignment={options.pictureAlignment}
@@ -533,11 +530,11 @@ define(
                         )
                     }else{
                         return (
-                            <ProfileCard
+                            <ProfileCard 
                                 key={"rowSeven"+iterator}
                                 width={4}
-                                theme={options.theme}
-                                displayName={options.displayName}
+                                theme={options.theme} 
+                                displayName={options.displayName} 
                                 description={options.description}
                                 displayPicture={options.displayPicture}
                                 coverPicture={options.coverPicture} >
@@ -551,8 +548,8 @@ define(
 
                 var posts = this.state.postOptions.map(function (options, iterator) {
                     return (
-                        <Post
-                            key={"rowEight"+iterator}
+                        <Post 
+                            key={"rowEight"+iterator} 
                             width={6}
                             displayName={options.displayName}
                             displayPicture={options.displayPicture}
@@ -570,32 +567,6 @@ define(
                     )
                 });
 
-
-
-                var ultimGrafic = {
-                        contingut: "Ultim",
-                        titol: "Ultim",
-                        peu:"Peu taula"
-                };
-
-                var rows = [];
-                for (var i=0; i<24; i++) {
-                    var valueTmp = Math.round(Math.random()*100);
-
-                    rows.push ({
-                        hour: String("0"+i).slice(-2)+":00",
-                        values:[ valueTmp,( valueTmp+1 ),( valueTmp+3 ) ]
-                    });
-                }
-                console.dir(rows);
-                var taula = {
-                    title: "15/04",
-                    header: [
-                        {title: "Hora"}, {title: "Escenari 1"}, {title: "Escenari 2"}, {title: "Escenari 3"}
-                    ],
-                    rows: rows
-                };
-
                 return (
                     <div className="wrapper">
                         <HeaderBar />
@@ -605,13 +576,13 @@ define(
                         <div className="content-wrapper">
                             <section className="content-header">
                                 <h1>
-                                    Títol
-                                    <small>Subtitol</small>
+                                    Pàgina
+                                    <small>Preview page</small>
                                 </h1>
-                                {<ol className="breadcrumb">
+                                {/*<ol className="breadcrumb">
                                     <li><a href="#"><i className="fa fa-dashboard"></i> Home</a></li>
                                     <li className="active">Dashboard</li>
-                                </ol>}
+                                </ol>*/}
                             </section>
 
                             <section className="content">
@@ -620,67 +591,54 @@ define(
                                 </div>
 
                                 <div className="row">
-                                    {progressInfoTileWidgets}
+                                    {progressInfoTileWidgets}         
                                 </div>
 
-
-                                <h2 className="page-header">Taula</h2>
                                 <div className="row">
-                                    <TableBox
-                                        title="Última predicció"
+                                    {statTileWidgets}                
+                                </div>
+
+                                <div className="row">
+                                    {boxWidgets}       
+                                </div>
+
+                                <div className="row">
+                                    {smallBoxBorderedWidgets}             
+                                </div>
+
+                                <div className="row">
+                                    {chatBoxWidgets}               
+                                </div>
+                                <h2 className="page-header">Social Widgets</h2>
+                                <div className="row">
+                                    {ProfileCardWidgets}
+                                </div>
+
+                                <div className="row">
+                                    {posts}         
+                                </div>
+
+                                <div className="row">
+                                    <Box 
+                                        title="Sample Box" 
                                         width="12"
-                                        theme="box-danger"
-                                        border={true}
-                                        collapsable = {true}
-                                        closable = {true}
-                                        content={ultimGrafic.contingut}
-                                        tabletitle={taula.title}
-                                        rows={taula.rows}
-                                        header={taula.header}
-                                        footer={ultimGrafic.peu}
-                                    />
-                                </div>
-
-                                <h2 className="page-header">Prediccions</h2>
-                                <div className="row">
-                                    <Box
-                                        title="Últim gràfic"
-                                        width="4"
-                                        theme="box-primary"
-                                        border={true}
+                                        theme="box-default"
+                                        border={false}
                                         boxTools = {['collapse','remove']} 
-                                        content={ultimGrafic.contingut}
-                                        contentTitle={ultimGrafic.titol}
-                                        footer={ultimGrafic.peu}
-                                    />
-                                    <Box
-                                        title="Últim gràfic"
-                                        width="4"
-                                        theme="box-primary"
-                                        border={true}
-                                        boxTools = {['collapse','remove']}
-                                        content=""
-                                        footer="footer_caixa"
-                                    />
-                                    <Box
-                                        title="Últim gràfic"
-                                        width="4"
-                                        theme="box-primary"
-                                        border={true}
-                                        boxTools = {['collapse','remove']}
-                                        content=""
-                                        footer="footer_caixa"
-                                    />
-
+                                        content="Sample Content"
+                                        footer="footer"/>         
                                 </div>
 
                             </section>
 
                         </div>
 
-                        <FooterBar product="oraKWlum" owner="GISCE-TI" ownerUrl="http://gisce.net" version="0.0.1"/>
-
-
+                        <footer className="main-footer">
+                            <div className="pull-right hidden-xs">
+                                <b>Version</b> 1.0.0
+                            </div>
+                            <strong>This project is a derivative of <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong>
+                        </footer>
 
                         {/*<ControlsMenu />*/}
                     </div>

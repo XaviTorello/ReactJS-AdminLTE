@@ -103,9 +103,9 @@ define(
                         {/* Logo */}
                         <a href="index2.html" className="logo">
                             {/* mini logo for sidebar mini 50x50 pixels */}
-                            <span className="logo-mini"><b>A</b>LT</span>
+                            <span className="logo-mini"><b>oKW</b>GUI</span>
                             {/* logo for regular state and mobile devices */}
-                            <span className="logo-lg"><b>Admin</b>LTE</span>
+                            <span className="logo-lg"><b>oraKWlum</b> Frontend</span>
                         </a>
                         {/* Header Navbar: style can be found in header.less */}
                         <nav className="navbar navbar-static-top" role="navigation">
@@ -143,14 +143,14 @@ define(
                                     <li className="dropdown user user-menu">
                                         <a href="#" className="dropdown-toggle" data-toggle="dropdown">
                                             <img src="dist/img/user2-160x160.jpg" className="user-image" alt="User Image" />
-                                            <span className="hidden-xs">Alexander Pierce</span>
+                                            <span className="hidden-xs">Xavi Torell</span>
                                         </a>
                                         <ul className="dropdown-menu">
                                             {/* User image */}
                                             <li className="user-header">
                                                 <img src="dist/img/user2-160x160.jpg" className="img-circle" alt="User Image" />
                                                 <p>
-                                                    Alexander Pierce - Web Developer
+                                                    Xavi Torelló - Web Developer
                                                     <small>Member since Nov. 2012</small>
                                                 </p>
                                             </li>
