@@ -38,13 +38,13 @@ define(
                             </li>
                             <li className="user-body">
                                 <div className="col-xs-4 text-center">
-                                    <a href="#">Seguidors</a>
+                                    <a href="#">Històric</a>
                                 </div>
                                 <div className="col-xs-4 text-center">
-                                    <a href="#">Ventes</a>
+                                    <a href="#">Propostes</a>
                                 </div>
                                 <div className="col-xs-4 text-center">
-                                    <a href="#">Amistats</a>
+                                    <a href="#">Compres</a>
                                 </div>
                             </li>
                             <li className="user-footer">

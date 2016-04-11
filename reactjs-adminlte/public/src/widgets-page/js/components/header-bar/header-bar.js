@@ -145,11 +145,9 @@ define(
                                         <HeaderTasks tasks={that.state.tasks} />
                                     </li>
                                     {/* User Account: style can be found in dropdown.less */}
-                                    <li className="dropdown user user-menu">
 
                                         <UserAccount userOptions={that.props.userOptions}/>
 
-                                    </li>
                                     { /* ontrol Sidebar Toggle Button */}
                                     <li>
                                         <a href="#" data-toggle="control-sidebar"><i className="fa fa-gears"></i></a>

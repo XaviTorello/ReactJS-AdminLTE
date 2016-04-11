@@ -3,7 +3,7 @@ define(
         'react',
         'jquery',
         './header-bar/header-bar',
-        './navigation-menu',
+        './navigation-menu/navigation-menu',
         './footer-bar/footer-bar',
         './widgets/table-box/table-box',
         './widgets/info-tile/info-tile',
@@ -192,8 +192,7 @@ define(
                     <div className="wrapper">
                         <HeaderBar userOptions={userOptions}/>
                         
-                        <NavigationMenu />
-                        
+
                         <div className="content-wrapper">
                             <section className="content-header">
                                 <h1>
