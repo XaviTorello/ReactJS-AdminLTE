@@ -79,15 +79,15 @@ define(
 */
 
                     return (
-                       <RadioButton key={entry.id} type={that.state.type} name={that.state.parentID} value={entry} checked={activated} />
+                       <RadioButton key={idx} type={that.state.type} name={"chooser_" + that.state.parentID} value={entry} checked={activated} />
                     );
 
                 })
 
 
                 return (
-                    <form>
-                        <div className="form-group pull-right">
+                    <form >
+                        <div id={"div_chooser_"+ that.props.parentID} className="form-group pull-right">
                             {elements}
                         </div>
                     </form>

@@ -104,6 +104,7 @@ define(
 
 
 
+
                 this.setState({
                     infoTileOptions: infoTileOptions,
                     progressInfoTileOptions: progressInfoTileOptions,
@@ -161,13 +162,16 @@ define(
                 };
 
                 var rows = [];
+                var max_value = 0;
                 for (var i=0; i<24; i++) {
                     var valueTmp = Math.round(Math.random()*100);
 
                     rows.push ({
                         hour: String("0"+i).slice(-2)+":00",
-                        values:[ valueTmp,( valueTmp+1 ),( valueTmp+3 ) ]
+                        values:[ valueTmp,( valueTmp+10 ),( valueTmp+15 ) ]
                     });
+
+                    max_value = Math.max(max_value, valueTmp+15);
                 }
 
                 var taula = {
@@ -175,7 +179,8 @@ define(
                     header: [
                         {title: "Hora"}, {title: "Escenari 1"}, {title: "Escenari 2"}, {title: "Escenari 3"}
                     ],
-                    rows: rows
+                    rows: rows,
+                    max: max_value
                 };
 
                 var userOptions = {
@@ -230,6 +235,8 @@ define(
                                         rows={taula.rows}
                                         header={taula.header}
                                         footer={ultimGrafic.peu}
+                                        maxValue = {taula.max}
+                                        id = "55"
                                     />
                                 </div>
 

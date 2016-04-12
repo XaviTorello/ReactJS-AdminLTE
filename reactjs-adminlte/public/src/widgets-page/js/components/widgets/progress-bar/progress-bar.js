@@ -9,21 +9,38 @@ define(
 
         var ProgressBar = React.createClass({
             getInitialState: function () {
+                //Color passed as a integer -> return colorname (scaling integer with possible values)
+                if (Number(this.props.color)>0)
+                    var color=colors[this.props.color % colors.length];
+                else
+                    var color=(colors.indexOf(this.props.color) >= 0) ? this.props.color : colors[0];
+
+
                 return {
-                    color: null,
-                    amount: null,
+                    color: color,
+                    amount: this.props.amount,
                 }
             },
 
-            componentDidMount: function () {
-
-                var color=(colors.indexOf(this.props.color))?this.props.color:colors[0];
-
+            componentWillReceiveProps: function(nextProps) {
                 this.setState({
+                    amount: nextProps.amount
+                });
+            },
+
+
+            component: function () {
+                //Color passed as a integer -> return colorname (scaling integer with possible values)
+                if (Number(this.props.color)>0)
+                    var color=colors[this.props.color % colors.length];
+                else
+                    var color=(colors.indexOf(this.props.color) >= 0) ? this.props.color : colors[0];
+
+
+                return {
                     color: color,
                     amount: this.props.amount,
-                });
-
+                }
             },
 
 
@@ -32,7 +49,7 @@ define(
 
                 return (
                     <div className="progress progress-xs">
-                        <div className="progress-bar progress-bar-'+ colors[color%colors.length] + '" style="width: '+  amount + '%">
+                        <div className={"progress-bar progress-bar-"+that.state.color} style={{width: that.state.amount + '%'}}>
                         </div>
                     </div>
 

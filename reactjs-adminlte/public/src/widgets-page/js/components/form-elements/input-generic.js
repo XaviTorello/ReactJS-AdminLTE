@@ -19,7 +19,8 @@ define(
             handleChange: function (event) {
                 //event.preventDefault();
 
-                console.log("handle",event.target.value);
+                console.log("handle",event.target.name, event.target.value);
+                //console.dir(event.target);
                 //console.log(this.props.name + " " + $("input[name="+ this.props.name+ "]:checked").val());
             },
 

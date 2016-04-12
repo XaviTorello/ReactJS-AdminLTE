@@ -3,9 +3,8 @@ define(
         'react',
         '../custom-box/box',
         './table',
-        '../progress-bar/progress-bar'
     ],
-    function (React, Box, Table, ProgressBar) {
+    function (React, Box, Table) {
 
 
         var TableBox = React.createClass({
@@ -16,7 +15,7 @@ define(
                 }
             },
 
-            componentDidMount: function () {
+            componentWillMount: function () {
                 var tools = [];
 
                 if (this.props.collapsable)
@@ -28,6 +27,7 @@ define(
 
                 this.setState({
                     tools: this.state.tools.concat(tools),
+                    id: this.props.id,
                     title: this.props.title,
                     tabletitle: this.props.tabletitle,
                     width: this.props.width,
@@ -35,6 +35,7 @@ define(
                     footer: this.props.footer,
                     rows: this.props.rows,
                     header: this.props.header,
+                    maxValue: this.props.maxValue,
                 });
 
             },
@@ -44,8 +45,10 @@ define(
             render: function () {
                 var that = this;
 
+                var rowss = [{hour: "20:00", values: [2,3,4]}];
+
                 var content = (
-                    <Table title={that.state.tabletitle} rows={that.props.rows} header={that.props.header} chooser="true" chooserType='radio'/>
+                    <Table id={that.props.id} title={that.props.tabletitle} rows={that.props.rows} maxValue={that.props.maxValue} header={that.props.header} tableType="both" chooser="true" chooserType='radio'/>
                 );
 
                 return (
