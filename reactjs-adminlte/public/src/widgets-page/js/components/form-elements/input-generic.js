@@ -10,7 +10,6 @@ define(
             getInitialState: function () {
 
                 return {
-                  isChecked: true
                 };
 
 
@@ -19,19 +18,14 @@ define(
             handleChange: function (event) {
                 //event.preventDefault();
 
-                console.log("handle",event.target.name, event.target.value);
+                //console.log("handle",event.target.name, event.target.value);
+
+                if (typeof this.props.onChange === 'function') {
+                    this.props.onChange(event.target.value);
+                }
+
                 //console.dir(event.target);
                 //console.log(this.props.name + " " + $("input[name="+ this.props.name+ "]:checked").val());
-            },
-
-            toggleChange: function() {
-                // $("input[name="+ this.props.name+ "]")
-
-                this.setState({
-                    isChecked: !this.state.isChecked
-                }, function() {
-                    console.log("insider",this.state);
-                }.bind(this));
             },
 
 
@@ -40,7 +34,15 @@ define(
 
                 return (
                    <label key={that.id}>
-                   <input key={that.id} type={that.props.type} name={that.props.name} value={that.props.value} onClick={that.handleChange} />
+                       <input
+                           key={that.id}
+                           type={that.props.type}
+                           name={that.props.name}
+                           value={that.props.value}
+                           onChange={that.handleChange}
+                           checked={that.props.checked}
+                       />
+
                        {that.props.value}
                    </label>
                 );

@@ -212,6 +212,9 @@ define(
                             </section>
 
                             <section className="content">
+
+                            {/* }
+
                                 <div className="row">
                                     {infoTileWidgets}
                                 </div>
@@ -219,6 +222,8 @@ define(
                                 <div className="row">
                                     {progressInfoTileWidgets}
                                 </div>
+
+                            { */ }
 
 
                                 <h2 className="page-header">Taula</h2>
@@ -231,7 +236,8 @@ define(
                                         collapsable = {true}
                                         closable = {true}
                                         content={ultimGrafic.contingut}
-                                        tabletitle={taula.title}
+                                        tableTitle={taula.title}
+                                        tableType="both"
                                         rows={taula.rows}
                                         header={taula.header}
                                         footer={ultimGrafic.peu}
@@ -239,6 +245,7 @@ define(
                                         id = "55"
                                     />
                                 </div>
+
 
                                 <h2 className="page-header">Prediccions</h2>
                                 <div className="row">

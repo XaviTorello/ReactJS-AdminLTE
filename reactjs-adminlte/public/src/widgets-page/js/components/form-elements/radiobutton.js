@@ -7,16 +7,22 @@ define(
 
         var RadioButton = React.createClass({
             getInitialState: function () {
-                    return {
-                    };
+                return {
+                };
             },
 
+            handleChange: function(event) {
+                //trigger parent onChange
+                if (typeof this.props.onChange === 'function') {
+                    this.props.onChange(event);
+                }
+            },
 
             render: function () {
                 var that = this;
 
                 return (
-                   <InputGeneric key={that.id} type="radio" name={that.props.name} value={that.props.value} checked={this.props.checked} onChange={that.toggleChange} />
+                   <InputGeneric key={that.id} type="radio" name={that.props.name} value={that.props.value} checked={this.props.checked} onChange={that.handleChange} />
                 );
 
             }

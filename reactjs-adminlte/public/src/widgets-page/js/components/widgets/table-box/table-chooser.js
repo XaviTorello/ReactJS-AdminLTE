@@ -37,7 +37,7 @@ define(
                     tools.push('remove');
 
 
-                var selected = Number(this.props.selected);
+                var selected = this.props.selected;
 
                 //select last option if not defined or badly defined
                 if (typeof(selected)==undefined || !( (selected > 0) && (selected < this.props.options.length) )){
@@ -56,8 +56,21 @@ define(
 
             },
 
-            toggleChange: function() {
-                console.dir(this);
+
+            handleChange: function(event) {
+
+                //trigger parent onChange
+                if (typeof this.props.onChange === 'function') {
+                    this.props.onChange(event);
+                }
+
+                //reach id of selected option
+                var numberSelected = this.state.options.indexOf(event);
+
+                //save selectedID and wait to re-render
+                this.setState({
+                    selected: numberSelected
+                });
 
             },
 
@@ -65,21 +78,14 @@ define(
                 var that = this;
 
                 var elements = that.state.options.map(function (entry, idx) {
-                    var activated = null;
+                    var activated = "";
 
                     if (idx == that.state.selected)
                         activated = "checked";
-/*
-                    return (
-                       <label key={idx}>
-                       <input key={entry.id} type={that.state.type} name={that.state.parentID} value={entry} checked={activated} onClick={that.toggleChange} />
-                           xx{entry}
-                       </label>
-                    );
-*/
+
 
                     return (
-                       <RadioButton key={idx} type={that.state.type} name={"chooser_" + that.state.parentID} value={entry} checked={activated} />
+                       <RadioButton key={idx} type={that.state.type} name={"chooser_" + that.state.parentID} value={entry} checked={activated} onChange={that.handleChange} />
                     );
 
                 })
