@@ -2,9 +2,10 @@ define(
     [
         'react',
         '../custom-box/box',
-        './table-content',
+        './table',
+        '../progress-bar/progress-bar'
     ],
-    function (React, Box, Table) {
+    function (React, Box, Table, ProgressBar) {
 
 
         var TableBox = React.createClass({
@@ -43,7 +44,9 @@ define(
             render: function () {
                 var that = this;
 
-                var content = <Table title={that.state.tabletitle} rows={that.props.rows} header={that.props.header}/>;
+                var content = (
+                    <Table title={that.state.tabletitle} rows={that.props.rows} header={that.props.header} chooser="true" chooserType='radio'/>
+                );
 
                 return (
                     <Box

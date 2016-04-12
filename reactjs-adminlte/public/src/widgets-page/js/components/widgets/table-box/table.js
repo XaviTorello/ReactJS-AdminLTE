@@ -1,8 +1,9 @@
 define(
     [
         'react',
+        './table-chooser',
     ],
-    function (React) {
+    function (React, TableChooser) {
         var Table = React.createClass({
             getInitialState: function () {
                 return {
@@ -14,21 +15,25 @@ define(
 
             componentDidMount: function () {
 
-                this.setState({
+                var chooser = (this.props.chooser == "true")?true:false;
 
+
+                this.setState({
+                    chooser: chooser,
+                    chooserType: this.props.chooserType,
                 });
             },
 
             render: function () {
                 var that = this;
 
-                var rowsList = that.props.rows.map(function (rowEntry) {
+                var rowsList = that.props.rows.map(function (rowEntry, idx) {
                     var values = rowEntry.values.map ( function (value){
                         return (<td key={value.id}>{value}</td>)
                     });
 
                     return (
-                        <tr key={rowEntry.id}>
+                        <tr key={idx}>
                             <td key={rowEntry.id}>{rowEntry.hour}</td>
                             {values}
                         </tr>
@@ -42,8 +47,22 @@ define(
                     )
                 });
 
+
+                //TableChooser
+
+                var tableChooser=null;
+                if (that.state.chooser) {
+                    var options =  ["text", "bar", "both"];
+
+                    tableChooser = (
+                        <TableChooser options={options} title="Tipus de la taula:" parentID="43"  type={that.state.chooserType} />
+                    );
+
+                }
                 return (<div>
                             <h3 className="text-center">{this.props.title}</h3>
+
+                            {tableChooser}
 
                             <table className="table table-striped table-bordered" id="taula" max="5" >
                                 <thead>
