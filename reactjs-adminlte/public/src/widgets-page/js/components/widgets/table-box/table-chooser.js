@@ -69,19 +69,18 @@ define(
 
                     if (idx == that.state.selected)
                         activated = "checked";
-
+/*
                     return (
                        <label key={idx}>
                        <input key={entry.id} type={that.state.type} name={that.state.parentID} value={entry} checked={activated} onClick={that.toggleChange} />
                            xx{entry}
                        </label>
                     );
+*/
 
-/*
                     return (
                        <RadioButton key={entry.id} type={that.state.type} name={that.state.parentID} value={entry} checked={activated} />
                     );
-*/
 
                 })
 
