@@ -1,8 +1,9 @@
 define(
     [
         'react',
+        '../../form-elements/radiobutton',
     ],
-    function (React, Box, Table) {
+    function (React, RadioButton) {
 
 
         var TableChooser = React.createClass({
@@ -55,7 +56,10 @@ define(
 
             },
 
+            toggleChange: function() {
+                console.dir(this);
 
+            },
 
             render: function () {
                 var that = this;
@@ -68,10 +72,16 @@ define(
 
                     return (
                        <label key={idx}>
-                       <input key={entry.id} type={that.state.type} name={that.state.parentID} value={entry} checked={activated} />
-                           {entry}
+                       <input key={entry.id} type={that.state.type} name={that.state.parentID} value={entry} checked={activated} onClick={that.toggleChange} />
+                           xx{entry}
                        </label>
-                    )
+                    );
+
+/*
+                    return (
+                       <RadioButton key={entry.id} type={that.state.type} name={that.state.parentID} value={entry} checked={activated} />
+                    );
+*/
 
                 })
 
